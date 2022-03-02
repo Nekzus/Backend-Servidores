@@ -1,9 +1,7 @@
 const express = require('express');
 const Contenedor = require('./container.js');
 
-
 const app = express();
-
 
 app.get('/', (req, res) => {
     
@@ -13,8 +11,7 @@ app.get('/', (req, res) => {
     res.write('<li><h3><a href="/productos">Productos</a></h3></li>');
     res.write('<li><h3><a href="/productoRandom">Producto aleatorio</a></h3></li>');
     res.write('</ul>');
-    res.end();
-    
+    res.end(); 
 })
 
 app.get('/productos', (req, res) => {
